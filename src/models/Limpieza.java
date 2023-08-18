@@ -10,6 +10,6 @@ public class Limpieza extends Producto {
 
     @Override
     public String toString() {
-        return "Nombre: "+ this.nombre+ " /// Contenido: "+ this.peso+ this.unidad+ " /// Precio: "+this.precio;
+        return "Nombre: "+ this.nombre+ " /// Contenido: "+ this.peso+ this.unidad+ " /// Precio: $"+this.precio;
     }
 }

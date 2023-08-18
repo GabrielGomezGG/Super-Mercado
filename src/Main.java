@@ -8,12 +8,14 @@ public class Main {
 
         SuperMercado superMercado = new SuperMercado();
 
-        superMercado.agregarProducto((new Bebida("Cola-Cola Zero", 20, 1.5, UnidadDeVenta.Litros)));
+        superMercado.agregarProducto(new Bebida("Cola-Cola Zero", 20, 1.5, UnidadDeVenta.Litros));
         superMercado.agregarProducto(new Bebida("Cola-Cola", 18, 1.5, UnidadDeVenta.Litros));
         superMercado.agregarProducto(new Limpieza("Shampoo Sedal", 19, 500.0, UnidadDeVenta.ml));
         superMercado.agregarProducto(new Fruta("Frutillas", 64, 5.0, UnidadDeVenta.kilo));
 
         superMercado.mostrarProductos();
+        superMercado.mostrarProductoMasCaro();
+        superMercado.mostrarProductoMasBarato();
 
     }
 }
